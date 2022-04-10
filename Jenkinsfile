@@ -4,6 +4,7 @@ pipeline {
     stage('Dev Build') {
       steps {
         echo 'This is Dev pipeline'
+        git(url: 'https://github.com/pranikasudhakar', branch: 'Jenkins')
       }
     }
 
